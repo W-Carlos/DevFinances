@@ -137,6 +137,18 @@ const DOM = {
 
 // Formatando a moeda
 const Utils = {
+    formatAmount(value){
+        value = Number(value) * 100
+        
+        return value
+    },
+
+    formatDate(date){
+        const splittedDate = date.split("-")
+
+        return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`
+    },
+
     formatCurrency(value) {
         const signal = Number(value) < 0 ? "-" : "" 
         
@@ -174,21 +186,45 @@ const Form = {
         }
     },
 
+    formatValues(){
+        let {description, amount, date} = Form.getValues()
+
+        amount = Utils.formatAmount(amount)
+
+        date = Utils.formatDate(date)
+
+        return {
+            description,
+            amount,
+            date
+        }
+    },
+
+    clearFields(){
+        Form.description.value = ""
+        Form.amount.value = ""
+        Form.date.value = ""
+    },
+
     submit(event){
         event.preventDefault()
 
         try {
             // verificar se todas as informações foram preenchidas
             Form.validateFields()
+
             // formatar os dados para salvar
-            //Form.formatData()
+            const transaction = Form.formatValues()
+
             // salvar
+            Transaction.add(transaction)
 
             // apagar os dados do formulário
+            Form.clearFields()
 
             // modal feche
+            Modal.close()
 
-            // atualizar a aplicação
         } catch (error) {
             alert(error.message)
         }
