@@ -6,7 +6,7 @@
 <img src="./assets/devFinance.gif">
 
 >## 📱 Versão Mobile
-<img src="./assets/devFinance-mobile.gif" width="240px">
+<img src="./assets/devFinance-mobile.gif" width="250px">
 
 >## 🚀 Tecnologias
 
