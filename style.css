@@ -134,6 +134,12 @@ header {
     
     margin-bottom: 2rem;
     color: var(--dark-blue);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: none;
 }
 
 .card h3 {
@@ -301,5 +307,9 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
     }
 }
