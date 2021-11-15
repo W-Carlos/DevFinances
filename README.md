@@ -5,10 +5,8 @@
 >## 💻 Projeto
 O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída.
 
->## Teste o projeto no botão abaixo:
-<a href="https://unruffled-keller-ba7259.netlify.app/">
-  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
-</a>
+>## Teste o projeto link abaixo:
+[https://devfinances01.netlify.app/](https://devfinances01.netlify.app/)
 
 >## 🖥️ Versão Desktop
 <img src="./assets/devFinance.gif">
