@@ -22,6 +22,20 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
+>## Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com). 
+
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+```bash
+# Clone este repositório
+$ https://github.com/W-Carlos/DevFinances.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd DevFinances
+```
 >## 📝 Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
